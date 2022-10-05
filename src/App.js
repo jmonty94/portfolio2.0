@@ -7,8 +7,8 @@ import Background from './images/Sea.mp4'
 
 function App() {
   return (
-    <div>
-      <video autoPlay loop muted id='video' style={{ position: 'fixed', zIndex: -1, fit: 'fill', borderRadius:'16px', }}>
+    <div className='main'>
+      <video autoPlay loop muted id='video'>
         <source src={Background} type='video/mp4'></source>
       </video>
       <Portfolio/>

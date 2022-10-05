@@ -27,7 +27,7 @@ export default function Portfolio() {
 
     return (
 
-        <Container sx={{justifyContent: 'center', display:'flex', flexDirection: 'column', backgroundColor: 'rgba(0, 0, 0, 0.75)', borderRadius: '16px', color: "white"}}>
+        <Container sx={{justifyContent: 'center', display:'flex', width: "100%", flexDirection: 'column', backgroundColor: 'rgba(0, 0, 0, 0.75)', borderRadius: '16px', color: "white"}}>
             <Header sx={{justifyContent:'space-between', display: 'flex', opacity: 1}} currentPage={currentPage} changePage={changePage}/>
             <Grid container sx={{m:3, justifyContent: "center", opacity:1}}>
                 {renderPage()}
