@@ -27,8 +27,8 @@ export default function Header({ currentPage, changePage }) {
                         />
                     </Grid>
                 </Grid> */}
-            <Avatar alt="James Montgomery" src={profilePic} sx={{ width: 120, height: 120 }} />
-            <Typography variant="h4" component='h1'>James Montgomery<br /> Full Stack Developer</Typography >
+            <Avatar alt="James Montgomery" src={profilePic} sx={{ width: '10%', height: '10%' }} />
+            <Typography sx={{fontSize: "1.5rem"}} component='h1'>James Montgomery<br /> Full Stack Developer</Typography >
             <Navbar currentPage={currentPage} changePage={changePage}></Navbar>
         </Box>
 

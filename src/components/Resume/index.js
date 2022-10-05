@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Box, Button, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import SinglePage from "./pdfviewer";
-
 import resumePDF from './../../assets/jamesMontgomeryFullStackDeveloper.pdf'
+import useWindowSize from "./useWindowSize";
   
 export default function Resume() {
   
@@ -22,12 +22,20 @@ export default function Resume() {
             })
         })
     }
+    const windowSize = useWindowSize();
+
+    const smallWindow = windowSize.width >= 700
+    
     return (
-        // <Typography sx={{color: 'white'}}>Hello </Typography>
-            <Box>
-                <Typography variant='h4' sx={{color: 'white'}}>Feel Free to download or just view my resume below.</Typography>
-                <SinglePage pdf={resumePDF}></SinglePage>
-                <Button variant="contained" onClick={onButtonClick}>
+        <Box sx={{textAlign: 'center'}}>
+                {smallWindow ? (
+                    <SinglePage pdf={resumePDF}></SinglePage>
+                ) : (
+                    <Typography sx={{color: 'white'}}>
+                        Sorry your screen is too small at the moment to display the PDF. Feel free to download a copy or go to the contact page to request me to email it to you.
+                    </Typography>
+                )}
+                <Button variant="contained" onClick={onButtonClick} sx={{mx: 'auto'}}>
                     <DownloadIcon/>
                 </Button>
             </Box>

@@ -2,6 +2,7 @@ import React from "react"
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { Box } from "@mui/material";
 
 const Navbar = ({currentPage, changePage}) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -20,7 +21,7 @@ const Navbar = ({currentPage, changePage}) => {
     };
   
     return (
-      <div>
+      <Box >
         <Button
           id="basic-button"
           aria-controls={open ? 'basic-menu' : undefined}
@@ -46,7 +47,7 @@ const Navbar = ({currentPage, changePage}) => {
           <MenuItem onClick={handleClose}>Contact</MenuItem>
           <MenuItem onClick={handleClose}>Resume</MenuItem>
         </Menu>
-      </div>
+      </Box>
     );
   }
 
