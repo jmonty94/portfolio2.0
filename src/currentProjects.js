@@ -17,7 +17,7 @@ const projects = [
         techStack: 'jQuery/MDBootstrap',
         githubURL: 'https://github.com/brandonjreyes/Event-COVID-Tracker',
         deployedURL: 'https://brandonjreyes.github.io/Event-COVID-Tracker/',
-        picturePath: './img/EventCOVIDSearchPage.PNG'
+        picturePath: './img/EventCOVIDSearchPage.png'
 
     },
     {
