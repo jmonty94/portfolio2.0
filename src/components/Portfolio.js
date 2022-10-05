@@ -5,6 +5,7 @@ import Projects from "../pages/Projects";
 import Contact from "./Contact";
 import { Container, Grid} from "@mui/material";
 import Resume from "./Resume";
+import Footer from "./Footer";
 
 
 export default function Portfolio() {
@@ -32,6 +33,7 @@ export default function Portfolio() {
             <Grid container sx={{m:3, justifyContent: "center", opacity:1}}>
                 {renderPage()}
             </Grid>
+            <Footer/>
         </Container >
         
     )
