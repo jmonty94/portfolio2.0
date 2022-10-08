@@ -3,6 +3,8 @@ const projects = [
         projectName: 'Lets Frickin Game',
         techStack:'MERN',
         githubURL: 'https://github.com/jmonty94/lets-fricking-game',
+        deployedURL: 'https://lets-frickin-game.herokuapp.com/',
+        picturePath: './img/letsFrickinGameLanding.PNG'
     },
     {
         projectName: "Offload",
